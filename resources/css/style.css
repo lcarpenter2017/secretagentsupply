@@ -4,29 +4,17 @@ html {
 
 body {
     font-family: Helvetica;
-    background-color: black;
+    line-height: 1;
 }
 
-header {
-    display: flex;
-    background-color: black;
-    justify-items: left;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-
-.brand { 
-    display: inline-flex;
-    justify-items: left;
-    flex-grow: 1;
-    align-content: center;
-    background-color: black;
+#banner {
     color: white;
-    padding: 20px;
+    height: 70px;
+    background-color: black;
+    margin-left: 0;
 }
 
-.brand img {
+#banner img {
     padding-left: 0.5rem;
     padding-right: 1rem;
     max-height: 1.5rem;
@@ -41,15 +29,28 @@ header {
 }
 
 .ninesixtycontainer {
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
+    padding: 0.66rem;
 }
 
-.motorcycleimage {
+#motorcycleimage {
     background-image: url(../images/moto.jpeg);
     height: 25rem;
-    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+.motocaption {
+    background-color: black;
+    color: white;
+    width: 20rem;
+    position: absolute;
+    top: 9rem;
+    margin-left: 0;
+}
+
 
 nav {
     display: flex;
@@ -68,20 +69,12 @@ nav a {
     text-decoration: none;
 }
 
-.motocaption {
-    display: flex;
-    margin: auto;
-    background-color: black;
-    width: 20rem;
-    justify-content: left;
-}
-
 h4 {
     font-size: 1rem;
     font-weight: bold;
     margin: 0;
     padding-top: 2rem;
-    padding-bottom: .25rem;
+    padding-bottom: .5rem;
     padding-left: 3rem;
 }
 
@@ -90,6 +83,7 @@ h2 {
     font-weight: bold;
     padding-left: 3rem;
     margin: 0;
+    padding-bottom: 1.5rem;
     
 }
 
