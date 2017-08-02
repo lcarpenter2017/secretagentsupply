@@ -28,7 +28,7 @@ body {
     align-text: center;
 }
 
-.ninesixtycontainer {
+.ninesixtylogo {
     width: 960px;
     margin: 0 auto;
     padding: 0.66rem;
@@ -51,17 +51,25 @@ body {
     margin-left: 0;
 }
 
-
 nav {
     display: flex;
-    justify-content: space-around;
+    padding: .75rem 0rem;
     background-color: firebrick;
 }
 
+.ninesixtynav {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
 nav span {
-    display: block;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
 
 nav a {
@@ -87,3 +95,21 @@ h2 {
     
 }
 
+.productcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+   justify-content: center;
+}
+
+.ninesixtyproduct {
+    
+}
+
+.product {
+    
+}
+
+img .products {
+    
+}
