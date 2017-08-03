@@ -57,7 +57,7 @@ nav {
     background-color: firebrick;
 }
 
-.ninesixtynav {
+.ninesixtycontainer {
     display: flex;
     max-width: 960px;
     margin: 0 auto;
@@ -96,20 +96,55 @@ h2 {
 }
 
 .productcontainer {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-   justify-content: center;
-}
-
-.ninesixtyproduct {
-    
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  width: 100%
 }
 
 .product {
-    
+    margin: 3rem 0rem;
+    border: 4px solid black;
+    width: 30%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-img .products {
+img.spygear {
+    display: flex;
+    align-items: center;
+    height: 9rem;
+    margin: 2rem 0rem;
+}
     
+#locationhours {
+    max-width: 960;
+    margin: 0rem auto;
+}
+
+.location {
+    margin: 0rem;
+    width: 35%
+}
+
+.caption {
+    background-color: black;
+    padding: 1rem 2rem;
+    margin: 0px 0px 5px 0px;
+    color: white;
+}
+
+h5 {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hours {
+    margin: 0rem;
+    width: 35%;
 }
