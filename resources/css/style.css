@@ -9,7 +9,7 @@ body {
 
 #banner {
     color: white;
-    height: 70px;
+    height: 3.80rem;
     background-color: black;
     margin-left: 0;
 }
@@ -34,6 +34,14 @@ body {
     padding: 0.66rem;
 }
 
+.ninesixtymoto {
+    display: flex;
+    width: 960px;
+    height: 25rem;
+    align-content: flex-start;
+    margin: 0 auto;
+}
+
 #motorcycleimage {
     background-image: url(../images/moto.jpeg);
     height: 25rem;
@@ -46,9 +54,10 @@ body {
     background-color: black;
     color: white;
     width: 20rem;
-    position: absolute;
+    height: 12rem;
     top: 9rem;
     margin-left: 0;
+    margin-top: 6rem;
 }
 
 nav {
@@ -91,8 +100,7 @@ h2 {
     font-weight: bold;
     padding-left: 3rem;
     margin: 0;
-    padding-bottom: 1.5rem;
-    
+    padding-bottom: 1.5rem;   
 }
 
 .productcontainer {
@@ -100,33 +108,50 @@ h2 {
   flex-direction: column;
   background-color: white;
   justify-content: center;
-  width: 100%
+  width: 100%;
 }
 
 .product {
     margin: 3rem 0rem;
     border: 4px solid black;
-    width: 30%;
     display: inline-flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 3rem;
+    max-width: 960px;
 }
 
-img.spygear {
+img.pen {
     display: flex;
     align-items: center;
     height: 9rem;
-    margin: 2rem 0rem;
+    margin: 2rem 2rem;
 }
     
+img.watch {
+    display: flex;
+    align-items: center;
+    height: 9rem;
+    margin: 2rem 2rem;
+}
+
+img.glasses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    margin: 3rem 1rem;
+}
+
 #locationhours {
-    max-width: 960;
+    width: 960;
     margin: 0rem auto;
 }
 
 .location {
     margin: 0rem;
-    width: 35%
+    width: 50%;
 }
 
 .caption {
