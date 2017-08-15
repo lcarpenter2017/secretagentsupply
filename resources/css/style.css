@@ -63,25 +63,28 @@ span.secret {
     width: 20rem;
 }
 
+/*This is where the media query for the mobile version of the motorcycle image and caption starts
+
 @media only screen and (max-width: 470px) {
-    
+
     .ninesixtymoto {
         justify-content: center;
         align-items: center;
-        height: 15rem;
     }
     
     .motocaption {
         width: 100%;
         padding-top: 1rem;
         padding-left: 2rem;
-        top: 10rem;
+        top: 9rem;
     }
     
     .motorcycleimage {
-        height: 10rem;
+        height: 15rem;
     }
 }
+
+/*This is where the media query for the mobile version of the motorcycle image and caption ends */
 
 h4 {
     font-size: 1rem;
