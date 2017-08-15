@@ -23,6 +23,10 @@ body {
     padding-top: 1rem;
 }
 
+span.secret {
+    color: white;
+}
+
 .banner img {
     padding-left: 0.5rem;
     padding-right: 1rem;
@@ -32,14 +36,14 @@ body {
 }
 
 .ninesixtylogo {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0.66rem;
 }
 
 .ninesixtymoto {
     display: flex;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -54,8 +58,8 @@ body {
 .motocaption {
     background-color: black;
     position: relative;
-    top: 9em;
-    padding: 2em 3em;
+    top: 9rem;
+    padding: 2rem 3rem;
     width: 20rem;
 }
 
@@ -64,12 +68,14 @@ body {
     .ninesixtymoto {
         justify-content: center;
         align-items: center;
+        height: 15rem;
     }
     
     .motocaption {
         width: 100%;
         padding-top: 1rem;
         padding-left: 2rem;
+        top: 10rem;
     }
     
     .motorcycleimage {
@@ -254,13 +260,19 @@ nav .ninesixtycontainer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 
+    margin: 0 auto;
+    padding-top: 3rem;
   }
 
   .productcontent .ninesixtycontainer .location, .productcontent .ninesixtycontainer .hours{
     width: 90%;
     margin: 0.25rem 0rem;
   }
+    
+    @media only screen and (max-width: 470px){
+        .productcontent .ninesixtycontainer .location, .productcontent .ninesixtycontainer .hours {
+        padding: .5rem;
+        }
 
   footer .banner .ninesixtylogo{
     margin: 0 auto;
@@ -272,7 +284,6 @@ nav .ninesixtycontainer {
     footer .banner .ninesixtylogo {
         width: 100%;
         align-items: center;
-        justify-content: center;
     }
     
     p.copyright {
