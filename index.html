@@ -6,7 +6,7 @@
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <!--  This is the Header-->
+    <!--  This is the Header including logo and branding-->
     <header>
       <div class="banner">
           <div class="ninesixtylogo">
@@ -15,44 +15,50 @@
     </header>
     <!--This is the Main Container-->
     <main>
-    <div id="motorcycleimage">
+    <div class="motorcycleimage">
         <div class="ninesixtymoto">
           <div class="motocaption">
                 <h4>NEW ARRIVAL</h4>
                 <h2>SPORT BIKES AND MOTORCYCLES</h2>
         </div>
-        </div></div>
+            </div></div>
          <!--This is the Nav Bar-->
         <nav>
             <div class="ninesixtycontainer">
-          <span><a href="#eyewear">Eyewear</a></span>
-          <span><a href="#apparel">Apparel</a></span>
-          <span><a href="#gadgets">Gadgets</a></span>
-          <span><a href="#vehicles">Vehicles</a></span> 
-          <span><a href="#glasses">Glasses</a></span>
-          <span><a href="#contact">Contact</a></span> 
-                </div></nav>
+              <span class="desk"><a href="#eyewear">Eyewear</a></span>
+              <span class="desk"><a href="#apparel">Apparel</a></span>
+              <span class="desk"><a href="#gadgets">Gadgets</a></span>
+              <span class="desk"><a href="#vehicles">Vehicles</a></span> 
+              <span class="desk"><a href="#glasses">Glasses</a></span>
+              <span class="desk"><a href="#contact">Contact</a></span>
+              <span class="tab"><a href="#menu">Menu</a></span></div>
+        </nav>
+                
     <!--This is the Products Section-->
-    <div class ="productcontainer">
-        <div class="ninesixtycontainer">
-                <div class="product"><img class="pen" src="resources/images/pen.png"><h5 class="caption">Exploding Pen</h5></div>
-                <div class="product"><img class="watch" src="resources/images/watch.png"><h5 class="caption">Cellular Watch</h5></div>
-                <div class="product"><img class="glasses" src="resources/images/glasses.png"><h5 class="caption">Thermal Glasses</h5></div></div>
-             <div class="ninesixtycontainer">
-                 <div class="locationhours">
-                     <h5 class="caption">Location</h5>
-                         <h5>-47.346436, 8432354</h5>
-                 </div>
-                 <div class="locationhours">
-                     <h5 class="caption">Hours</h5>
-                         <h5>0800 - 1800</h5>
-                         </div>
-        </div></div></main>
+    <div class ="productcontent">
+         <div class="ninesixtycontainer">
+                <div class="pen">
+                    <div class="imgcontainer"><img src="resources/images/pen.png"></div><p>Exploding Pen</p></div>
+                <div class="watch">
+                    <div class="imgcontainer"><img src="resources/images/watch.png"></div><p>Cellular Watch</p></div>
+                <div class="glasses">
+                    <div class="imgcontainer"><img src="resources/images/glasses.png"></div><p>Thermal Glasses</p></div></div>
+        <div class="ninesixtycontainer" id="locationhours">
+                     <div class="location">
+                         <div class="caption">
+                         <p>Location</p></div>
+                           <h5 class="value">-47.346436, 8432354</h5></div>
+                     <div class="hours">
+                         <div class="caption">
+                             <p>Hours</p></div>
+                            <h5 class="value">0800 - 1800</h5></div>
+                     </div></div>
+        </main>
     <!--This is the Footer-->
     <footer>
         <div class="banner">
             <div class="ninesixtylogo">
-                Copyright Secret Agent Supply</div></div>
+                <p class="copyright">Copyright Secret Agent Supply</p></div></div>
     </footer>
     </body>
 </html>

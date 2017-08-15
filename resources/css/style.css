@@ -1,15 +1,23 @@
+@charset "utf-8";
+
 html {
     font-size: 18px;
 }
 
 body {
     font-family: Helvetica;
+    color: white;
     line-height: 1;
 }
 
+@media only screen and (max-width: 1024px)
+  { body 
+    {
+    font-size: 16px;
+    }  }
+
 .banner {
-    color: white;
-    height: 3.80rem;
+    height: 3.0rem;
     background-color: black;
     margin-left: 0;
     padding-top: 1rem;
@@ -32,12 +40,10 @@ body {
 .ninesixtymoto {
     display: flex;
     width: 960px;
-    height: 25rem;
-    align-content: flex-start;
     margin: 0 auto;
 }
 
-#motorcycleimage {
+.motorcycleimage {
     background-image: url(../images/moto.jpeg);
     height: 25rem;
     background-repeat: no-repeat;
@@ -47,12 +53,55 @@ body {
 
 .motocaption {
     background-color: black;
-    color: white;
+    position: relative;
+    top: 9em;
+    padding: 2em 3em;
     width: 20rem;
-    height: 12rem;
-    top: 9rem;
-    margin-left: 0;
-    margin-top: 6rem;
+}
+
+@media only screen and (max-width: 470px) {
+    
+    .ninesixtymoto {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .motocaption {
+        width: 100%;
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+    
+    .motorcycleimage {
+        height: 10rem;
+    }
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+}
+
+@media only screen and (max-width: 470px) {
+    h4 {
+    font-size: .77rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 1.5rem;   
+}
+
+@media only screen and (max-width: 470px) {
+    h2 {
+    font-size: 1rem;
+    }
 }
 
 nav {
@@ -63,16 +112,16 @@ nav {
 
 .ninesixtycontainer {
     display: flex;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 nav span {
     margin: 0;
     padding: 0;
     border: 0;
-    vertical-align: baseline;
 }
 
 nav a {
@@ -80,67 +129,154 @@ nav a {
     text-decoration: none;
 }
 
-h4 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0;
-    padding-top: 2rem;
-    padding-bottom: .5rem;
-    padding-left: 3rem;
-}
+/*To hide the word menu in navigation bar when viewed in */
+@media only screen and (min-width: 1025px)
+  {nav .ninesixtycontainer span.tab {
+    display: none;
+      }}
 
-h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    padding-left: 3rem;
-    margin: 0;
-    padding-bottom: 1.5rem;   
-}
+/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
+@media only screen and (max-width: 1024px) {
+    nav .ninesixtycontainer span.desk {
+    display: none;
+      }
 
-.productcontainer {
+nav .ninesixtycontainer {
+    justify-content: center;
+    align-items: center;
+      }}
+
+.productcontent {
   display: flex;
   flex-direction: column;
-  background-color: white;
   justify-content: center;
+  background-color: white;
+}
+
+/*Styles the aignment of the box containing the images and the caption in the product grid (product images)*/
+.productcontent .ninesixtycontainer{
   width: 100%;
+  display: flex;
 }
 
-.product {
-    display: flex;
-    flex-direction: column;
-    margin: 3rem 0 3rem 0;
-    border: 4px solid black;
-    width: 30%;
-    justify-content: center;
+/*Styles the individula container holding the image and the caption in the product grid*/
+.productcontent .ninesixtycontainer .pen, .productcontent .ninesixtycontainer .watch, .productcontent .ninesixtycontainer .glasses {
+  margin: 3rem 0rem;
+  border: 4px solid black;
+  width: 30%;
+  align-items: center;
 }
 
-img.pen {
-    height: 9rem;
-    margin: 2rem auto;
+@media only screen and (max-width: 470px) {
+.productcontent .ninesixtycontainer .pen {
+  width: 100%;
+  margin: 0 auto;
+    }}
+
+/*For the container holding only the image in the box of the product grid*/
+.productcontent .ninesixtycontainer .imgcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9rem;
+  margin: 2rem 0rem;
 }
+
+/*Styles only the image of the product*/
+.productcontent .ninesixtycontainer .imgcontainer img{
+  width: 9rem;
+  height: auto;
+}
+
+/*Styles the caption below the images in the product grid*/
+.productcontent .ninesixtycontainer p{
+  background-color: black;
+  margin: 0px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  text-align: center;
+}
+
+/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
+@media only screen and (max-width: 1024px)
     
-img.watch {
-    height: 9rem;
-    margin: 2rem auto;
+{.productcontent .ninesixtycontainer .glasses
+    { display: none;
+    }
+    
+.productcontent .ninesixtycontainer .pen, .productcontent .ninesixtycontainer .watch
+    { width: 47%;
+  }
+    }
+
+/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 470px*/
+@media only screen and (max-width: 470px) {
+    
+.productcontent .ninesixtycontainer .pen
+    { width: 90%;
+  }
+
+.productcontent .ninesixtycontainer .watch, .productcontent .ninesixtycontainer .glasses
+    { display: none;
+    }
+    }
+
+#locationhours {
+    margin: 0rem auto 4rem auto;
 }
 
-img.glasses {
-    width: 12rem;
-    height: auto;
-    margin: auto;
+/*Styles the location and the timings box just below the product grid*/
+.productcontent .ninesixtycontainer .location, .productcontent .ninesixtycontainer .hours{
+  margin: 0rem;
+  width: 35%;
 }
 
-.locationhours {
-    margin: 3rem 0 4rem 0;
-    width: 35%;
+/*Styles the caption of the box in the location and timing container*/
+.productcontent .ninesixtycontainer .location .caption, .productcontent .ninesixtycontainer .hours .caption{
+  background-color: black;
+  padding: 1rem 2rem;
+  margin: 0px 0px 5px 0px;
 }
 
-.caption {
-    background-color: black;
-    color: white;
+/*Styles the value in the location and the timmings box*/
+.productcontent .ninesixtycontainer .location h5.value, .productcontent .ninesixtycontainer .hours h5.value{
+  text-align: left;
+  color: black;
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
 }
 
-h5 {
-    padding: .5rem 0 .5rem 0;
-    text-align: center;
+/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
+@media only screen and (max-width: 470px){
+    
+    #locationhours{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 
+  }
+
+  .productcontent .ninesixtycontainer .location, .productcontent .ninesixtycontainer .hours{
+    width: 90%;
+    margin: 0.25rem 0rem;
+  }
+
+  footer .banner .ninesixtylogo{
+    margin: 0 auto;
+  }
 }
+
+/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 470px*/
+@media only screen and (max-width: 470px) {
+    footer .banner .ninesixtylogo {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    p.copyright {
+        text-align: center;
+    }}
+    
+
