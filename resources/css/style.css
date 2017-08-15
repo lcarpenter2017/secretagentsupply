@@ -63,7 +63,7 @@ span.secret {
     width: 20rem;
 }
 
-/*This is where the media query for the mobile version of the motorcycle image and caption starts
+/*This is where the media query for the mobile version of the motorcycle image and caption starts*/
 
 @media only screen and (max-width: 470px) {
 
@@ -76,7 +76,7 @@ span.secret {
         width: 100%;
         padding-top: 1rem;
         padding-left: 2rem;
-        top: 9rem;
+        top: 10rem;
     }
     
     .motorcycleimage {
@@ -179,7 +179,7 @@ nav .ninesixtycontainer {
 @media only screen and (max-width: 470px) {
 .productcontent .ninesixtycontainer .pen {
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem;
     }}
 
 /*For the container holding only the image in the box of the product grid*/
@@ -264,7 +264,7 @@ nav .ninesixtycontainer {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding-top: 3rem;
+
   }
 
   .productcontent .ninesixtycontainer .location, .productcontent .ninesixtycontainer .hours{
