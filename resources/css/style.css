@@ -23,10 +23,6 @@ body {
     padding-top: 1rem;
 }
 
-span.secret {
-    color: white;
-}
-
 .banner img {
     padding-left: 0.5rem;
     padding-right: 1rem;
@@ -41,12 +37,6 @@ span.secret {
     padding: 0.66rem;
 }
 
-.ninesixtymoto {
-    display: flex;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
 .motorcycleimage {
     background-image: url(../images/moto.jpeg);
     height: 25rem;
@@ -55,33 +45,44 @@ span.secret {
     background-size: cover;
 }
 
-.motocaption {
-    background-color: black;
-    position: relative;
-    top: 9rem;
-    padding: 2rem 3rem;
-    width: 20rem;
+@media only screen and (max-width: 470px) {
+    { 
+        height: 15rem;  
+    }
 }
 
-/*This is where the media query for the mobile version of the motorcycle image and caption starts*/
+.ninesixtycontainer {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.motorcycleimage .ninesixtycontainer .motocaption {
+    background-color: black;
+    margin-top: 9rem;
+    padding: 0px;
+}
+
+.motorcycleimage .ninesixtycontainer .motocaption .mototext {
+    margin: 2rem 0rem 2rem 3rem;
+    max-width: 20rem;
+}
 
 @media only screen and (max-width: 470px) {
 
-    .ninesixtymoto {
-        justify-content: center;
-        align-items: center;
-    }
+.motorcycleimage .ninesixtycontainer .motocaption {
+    margin-top: 17rem;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+ .motorcycleimage .ninesixtycontainer .motocaption .mototext {
+    margin: 0rem;
+    width: 100%;
+}
     
-    .motocaption {
-        width: 100%;
-        padding-top: 1rem;
-        padding-left: 2rem;
-        top: 10rem;
-    }
-    
-    .motorcycleimage {
-        height: 15rem;
-    }
 }
 
 /*This is where the media query for the mobile version of the motorcycle image and caption ends */
@@ -117,14 +118,6 @@ nav {
     display: flex;
     padding: .75rem 0rem;
     background-color: firebrick;
-}
-
-.ninesixtycontainer {
-    display: flex;
-    max-width: 960px;
-    margin: 0 auto;
-    justify-content: space-between;
-    flex-grow: 1;
 }
 
 nav span {
@@ -273,12 +266,13 @@ nav .ninesixtycontainer {
   }
     
     @media only screen and (max-width: 470px){
-        .productcontent .ninesixtycontainer .location, .productcontent .ninesixtycontainer .hours {
+    .productcontent .ninesixtycontainer .location, .productcontent .ninesixtycontainer .hours {
         padding: .5rem;
         }
 
   footer .banner .ninesixtylogo{
     margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -286,11 +280,11 @@ nav .ninesixtycontainer {
 @media only screen and (max-width: 470px) {
     footer .banner .ninesixtylogo {
         width: 100%;
-        align-items: center;
     }
     
     p.copyright {
         text-align: center;
+        padding: .5rem;
     }}
     
 
